@@ -13,15 +13,12 @@ int main(){
             m[a]++;
         }
         for(char val='a';val<='z';val++){
-            int apsdiff=abs(m[val]-m[('z'-(val-'a'))]);
+            int apsdiff=(m[val]-m[('z'-(val-'a'))]);
             ans+=apsdiff;
-            cout<<ans<<" ";
         }
         for(char i='0';i<='9';i++){
-            int apsdiff=abs(m[i]-m[('9'-(i-'0'))]);
+            int apsdiff=(m[i]-m[('9'-(i-'0'))]);
             ans+=apsdiff;
-            cout<<ans<<" ";
-
         }
-        
+        cout<< ans/2;
 }
